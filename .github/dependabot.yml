@@ -23,6 +23,10 @@ updates:
   - dependency-name: lxml
     versions:
     - 4.6.2
+  groups:
+    pip:
+      patterns:
+        - "*"  # Group all pip updates into a single larger pull request (except listed in the ignore section)
 - package-ecosystem: github-actions
   directory: "/"
   groups:
